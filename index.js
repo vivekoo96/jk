@@ -1,11 +1,21 @@
+// var admin = require("firebase-admin");
+
+// var serviceAccount = require("./firestore-sdk.json");
+
+// admin.initializeApp({
+//   credential: admin.credential.cert(serviceAccount),
+//   databaseURL: "jackpot-b4a0d"
+// });
+
 var admin = require("firebase-admin");
 
-var serviceAccount = require("./firestore-sdk.json");
+var serviceAccount = require("./jackpotdd.json");
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
-  databaseURL: "jackpot-b4a0d"
+  databaseURL: "https://jackpot-e9443-default-rtdb.firebaseio.com"
 });
+
 
 const db = admin.firestore();
 
